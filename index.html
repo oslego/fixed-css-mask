@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Masking - Skyline Demo</title>
+  <style>
+
+  @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+
+  *{
+    box-sizing: border-box;
+  }
+
+  html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font: normal 26px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  article{
+    background: url(skyline.jpg) center center no-repeat;
+    background-size: 200% auto;
+    background-position: left center;
+  }
+
+  .wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    padding-top: 30vh;
+    padding-bottom: 55vh;
+    /*background-color: red;*/
+    -webkit-mask: url(mask-alpha.png) center center no-repeat;
+    -webkit-mask-size: 200% auto;
+    -webkit-mask-position: left center;
+  }
+
+
+  h1{
+    margin: 0 auto 5rem;
+    text-align: center;
+    font-size: 9em;
+    color: rgb(254, 240, 222);
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  p{
+    margin: 0 auto;
+    width: 50ch;
+    color: rgb(254, 240, 222);
+    font: normal 1em/1.4 'Playfair Display', serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  }
+
+  </style>
+</head>
+<body>
+  <article>
+    <div class="wrapper">
+      <div class="scroll">
+      <h1>New York</h1>
+      <p>
+      Many districts and landmarks in New York City have become well known to the city's approximately 55 million annual visitors.[38] Several sources have ranked New York the most photographed city in the world.[39][40][41] Times Square, iconified as "The Crossroads of the World",[42] is the brightly illuminated hub of the Broadway Theater District,[43] one of the world's busiest pedestrian intersections,[44][45] and a major center of the world's entertainment industry.[46] The names of many of the city's bridges, skyscrapers,[47] and parks are known around the world. New York City's financial district, anchored by Wall Street in Lower Manhattan, has been called the world's leading financial center[48][49][50] and is home to the New York Stock Exchange, the world's largest stock exchange by total market capitalization of its listed companies.[51][52] Manhattan's real estate market is among the most expensive in the world.[53] Manhattan's Chinatown incorporates the highest concentration of Chinese people in the Western Hemisphere,[54][55] with multiple signature Chinatowns developing across the city.[56][57] Providing continuous 24/7 service,[58] the New York City Subway is one of the most extensive metro systems worldwide, with 468 stations in operation.[59][60][61][62] New York City's higher education network comprises over 120 colleges and universities, including Columbia University, New York University, and Rockefeller University, which have been ranked among the top 35 in the world.[63]
+      </p>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      </div>
+    </div>
+  </article>
+</body>
+</html>
